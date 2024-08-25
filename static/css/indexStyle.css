@@ -1,0 +1,58 @@
+
+@font-face{
+    src : url("../font/DoHyeon-Regular.ttf");
+    font-family : "Font";
+}
+
+*{
+    font-family: "Font";
+    font-style: normal;
+}
+body {
+        margin: 0;
+        display: flex;
+        justify-content: center; /* 가로 가운데 정렬 */
+        align-items: center; /* 세로 가운데 정렬 */
+        height: 100vh; /* 화면 전체 높이만큼 설정 */
+    }
+#main {
+        text-align: center; /* 내부 요소들을 가운데 정렬하기 위해 추가 */
+    }
+
+img {
+    max-width: 100%; /* 이미지의 최대 너비를 부모 요소의 너비에 맞게 조정 */
+    height: auto; /* 이미지 높이를 자동으로 조정하여 비율 유지 */
+    max-height: 500px; /* 이미지의 최대 높이를 300px로 지정 */
+}
+#main>#CompanyInfo{
+    padding: 40px;
+    margin-right:100px;
+    font-size:30px;
+    text-align:left;
+    font-weight: 1;
+    float:left;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 그림자 효과 */
+}
+
+#main>#LoginSquare{
+    width:300px;
+    height:300px;
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 30px rgba(195, 131, 131, 0.5); /* 그림자 효과 */
+
+
+    padding:20px;
+    box-sizing:border-box;
+    float:left;
+
+
+
+    display: flex; /* 내부 요소들을 가로로 정렬하기 위해 Flexbox 사용 */
+    flex-direction: column; /* 내부 요소들을 세로로 정렬 */
+    justify-content: center; /* 세로 가운데 정렬 */
+}
+
+#main>#image{
+    float:left;
+}

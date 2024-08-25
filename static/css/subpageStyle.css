@@ -1,0 +1,65 @@
+
+
+@font-face{
+    src : url("../font/DoHyeon-Regular.ttf");
+    font-family : "Font";
+}
+*{
+    font-family: "Font";
+    background-color:black;
+    margin:0;
+    padding:0;
+}
+
+
+
+
+#wrap{
+    width:100%;
+    height:700px;
+    background-color:rgb(0, 0, 0);
+    position: relative; /* #wrap를 상위 컨테이너로 지정합니다 */
+    
+}
+#wrap>#upperMenu{
+    width:100%;
+    height:70px;
+    background-color:rgba(195, 255, 0, 0.3);
+    margin:0;
+    position:fixed;
+    z-index: 1; /* #logo를 #upperMenu보다 앞에 배치합니다 */
+
+
+}
+#upperMenu>#logo{
+    margin:0;
+
+    width:200px;
+    height:70px;
+    background-color:rgba(178, 212, 182, 0.3);
+    float:left;
+    z-index: 3; /* #logo를 #upperMenu보다 앞에 배치합니다 */
+}
+#upperMenu>#button{
+    margin:0;
+
+    width:200px;
+    height:70px;
+
+    background-color:rgba(139, 208, 194, 0.3);
+    float:right;
+    z-index: 3; /* #logo를 #upperMenu보다 앞에 배치합니다 */
+}
+#wrap video{
+    margin-top:200px;
+    width:100%;
+    height:700px;
+}
+
+#wrap>#bottom{
+    margin: 100px 0 100px 150px;
+    color:gray;
+    font-size: 30px;
+    line-height:40px
+
+}
