@@ -1,6 +1,6 @@
 from flask import Flask, request, render_template, url_for, redirect
 
-app = Flask(__name__, static_folder='/Users/SMK/Coding/Python/my_flask_app/static', template_folder='/Users/SMK/Coding/Python/my_flask_app/templates')
+app = Flask(__name__, static_folder='.\\static', template_folder='.\\templates')
 
 users = {
     'smk1': '1234'

@@ -6,7 +6,8 @@
 }
 *{
     font-family: "Font";
-    background-color:black;
+    background-color:rgb(0, 0, 0);
+    color:aliceblue;
     margin:0;
     padding:0;
 }
@@ -17,7 +18,6 @@
 #wrap{
     width:100%;
     height:700px;
-    background-color:rgb(0, 0, 0);
     position: relative; /* #wrap를 상위 컨테이너로 지정합니다 */
     
 }
@@ -33,6 +33,7 @@
 }
 #upperMenu>#logo{
     margin:0;
+    padding:0;
 
     width:200px;
     height:70px;
@@ -40,14 +41,63 @@
     float:left;
     z-index: 3; /* #logo를 #upperMenu보다 앞에 배치합니다 */
 }
+
+#upperMenu>.menu{
+    margin:0;
+    padding:0;
+    width:1503px;
+    height:70px;
+    float:left;
+    background-color:rgb(79, 131, 131) ;   
+    z-index: 3; /* #logo를 #upperMenu보다 앞에 배치합니다 */
+}
+
+.menu > li{
+    
+    position: relative;
+    display: inline-block;
+    width:200px;
+    height:70px;
+    background-color: aqua;
+}
+
+
+
+.submenu{
+    display: none; /* 초기 상태에서는 하위 메뉴를 숨김 */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #964848;
+    min-width: 150px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.submenu>li{
+    background-color:aqua;
+    width:200px;
+    height:70px;
+}
+
+
+.menu > li:hover .submenu {
+    display: block;
+}
+
+
+
+
 #upperMenu>#button{
     margin:0;
-
+    padding:0;
+    float:right;
     width:200px;
     height:70px;
 
-    background-color:rgba(139, 208, 194, 0.3);
-    float:right;
+    background-color:rgba(176, 204, 198, 0.3);
     z-index: 3; /* #logo를 #upperMenu보다 앞에 배치합니다 */
 }
 #wrap video{
