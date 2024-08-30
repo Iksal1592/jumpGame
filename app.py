@@ -20,6 +20,11 @@ def login():
 
 
 
+@app.route('/submenu/jumpGame')
+def jumpGame():
+    return render_template('submenu/jumpGame.html')
+
+
 @app.route('/subpage')
 def subpage():
     return render_template('subpage.html')

@@ -1,115 +1,123 @@
-
-
 @font-face{
-    src : url("../font/DoHyeon-Regular.ttf");
-    font-family : "Font";
+    src: url("../font/DoHyeon-Regular.ttf");
+    font-family: "Font";
 }
 *{
-    font-family: "Font";
-    background-color:rgb(0, 0, 0);
-    color:aliceblue;
-    margin:0;
-    padding:0;
-}
-
-
-
-
-#wrap{
-    width:100%;
-    height:700px;
-    position: relative; /* #wrap를 상위 컨테이너로 지정합니다 */
+    font-family: "Font", sans-serif;
+    background-color: rgb(0, 0, 0);
+    color: rgb(170, 209, 185);
+    margin: 0;
+    padding: 0;
     
 }
-#wrap>#upperMenu{
-    width:100%;
-    height:70px;
-    background-color:rgba(195, 255, 0, 0.3);
-    margin:0;
-    position:fixed;
-    z-index: 1; /* #logo를 #upperMenu보다 앞에 배치합니다 */
-
-
-}
-#upperMenu>#logo{
-    margin:0;
-    padding:0;
-
-    width:200px;
-    height:70px;
-    background-color:rgba(178, 212, 182, 0.3);
-    float:left;
-    z-index: 3; /* #logo를 #upperMenu보다 앞에 배치합니다 */
+a{
+    text-decoration: none;
+    background-color: transparent;
 }
 
-#upperMenu>.menu{
-    margin:0;
-    padding:0;
-    width:1503px;
-    height:70px;
-    float:left;
-    background-color:rgb(79, 131, 131) ;   
-    z-index: 3; /* #logo를 #upperMenu보다 앞에 배치합니다 */
+#wrap{
+    width: 100%;
+    position: relative;
+}
+
+#upperMenu{
+    width: 100%;
+    height: 70px;
+    background-color: rgba(195, 255, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    width: 200px;
+    height: 70px;
+    background-color: rgba(178, 212, 182, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    height: 70px;
+    background-color: rgb(79, 131, 131);
+    list-style: none;
 }
 
 .menu > li{
-    
     position: relative;
     display: inline-block;
-    width:200px;
-    height:70px;
-    background-color: aqua;
+    width: 200px;
+    height: 70px;
+    background-color: rgb(35, 192, 61);
+    text-align: center;
+    line-height: 70px;
 }
 
-
-
 .submenu{
-    display: none; /* 초기 상태에서는 하위 메뉴를 숨김 */
+    display: none;
     position: absolute;
     top: 100%;
     left: 0;
     background-color: #964848;
-    min-width: 150px;
+    width: 200px;
     list-style: none;
-    padding: 0;
-    margin: 0;
 }
 
-
-.submenu>li{
-    background-color:aqua;
-    width:200px;
-    height:70px;
+.submenu > li{
+    background-color: rgb(26, 204, 204);
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    line-height: 50px;
 }
 
-
-.menu > li:hover .submenu {
+.menu > li:hover .submenu{
     display: block;
 }
 
-
-
-
-#upperMenu>#button{
-    margin:0;
-    padding:0;
-    float:right;
-    width:200px;
-    height:70px;
-
-    background-color:rgba(176, 204, 198, 0.3);
-    z-index: 3; /* #logo를 #upperMenu보다 앞에 배치합니다 */
+#button{
+    width: 200px;
+    height: 70px;
+    background-color: rgba(176, 204, 198, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
 }
-#wrap video{
-    margin-top:200px;
+
+
+
+
+#wrap>#contents{
+
+    height:300px;
     width:100%;
-    height:700px;
 }
 
-#wrap>#bottom{
-    margin: 100px 0 100px 150px;
-    color:gray;
-    font-size: 30px;
-    line-height:40px
 
+
+
+
+
+#wrap video{
+    margin-top: 200px; /* #upperMenu의 높이만큼 마진 추가 */
+    width: 100%;
+    height: 700px;
+}
+
+#bottom{
+    margin: 100px 0 100px 150px;
+    color: gray;
+    font-size: 30px;
+    line-height: 40px;
 }
